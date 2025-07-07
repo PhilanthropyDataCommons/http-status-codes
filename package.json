@@ -1,0 +1,44 @@
+{
+	"name": "@pdc/http-status-codes",
+	"version": "1.0.0",
+	"description": "An organized collection of meaningfully named HTTP status code constants",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "npm run build:cleanup && npm run build:node",
+		"build:cleanup": "rimraf dist",
+		"build:node": "tsup",
+		"lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:tsc",
+		"lint:eslint": "eslint ./src --max-warnings=0",
+		"lint:tsc": "tsc --noEmit",
+		"lint:prettier": "prettier . --check",
+		"format": "npm run format:eslint && npm run format:prettier",
+		"format:eslint": "eslint ./src --fix || true",
+		"format:prettier": "prettier . --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PhilanthropyDataCommons/http-status-codes.git"
+	},
+	"files": [
+		"dist"
+	],
+	"author": "",
+	"license": "AGPL-3.0",
+	"devDependencies": {
+		"eslint": "^9.30.1",
+		"eslint-config-love": "^121.0.0",
+		"eslint-config-prettier": "^10.1.5",
+		"prettier": "^3.6.2",
+		"rimraf": "^6.0.1",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

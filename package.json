@@ -1,9 +1,9 @@
 {
 	"name": "@pdc/http-status-codes",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "An organized collection of meaningfully named HTTP status code constants",
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.js",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "npm run build:cleanup && npm run build:node",

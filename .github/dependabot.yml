@@ -8,6 +8,9 @@ updates:
       timezone: "Etc/UTC"
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       development:
         dependency-type: "development"

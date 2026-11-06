@@ -8,6 +8,10 @@ updates:
       timezone: "Etc/UTC"
     cooldown:
       default-days: 7
+    commit-message:
+      prefix: "fix"
+      prefix-development: "chore"
+      include: "scope"
     ignore:
       - dependency-name: "typescript"
         update-types: ["version-update:semver-major"]
@@ -25,6 +29,8 @@ updates:
       timezone: "Etc/UTC"
     cooldown:
       default-days: 7
+    commit-message:
+      prefix: "ci"
     groups:
       github-actions:
         patterns:
